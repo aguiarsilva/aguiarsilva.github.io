@@ -11,6 +11,7 @@
 }
 
 html {
+	font-family: "Open-sans", sans-serif;
 	font: normal 16px sans-serif;
 }
 
@@ -33,8 +34,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 15px;
-    background-color:  #D6EAF8;
-
+    background-color: #D6EAF8;
 }
 
 #items {
@@ -77,18 +77,23 @@ section:not(#welcome-section):nth-child(even) {
 	}
 }
 
-@media (max-width: 800px) {
+@media all and (max-width: 800px) {
 	header {
 		padding: 20px 50px;
 		flex-direction: column;
+		align-items: center;
+		flex: 1;
+		flex-wrap:wrap;
+		flex-basis: 100%;
 	}
+
 }
 
-.container {
+#welcome-section {
 	position: relative;
 	justify-content:center;
 	text-align:center;
-	min-height: 50vh;
+	min-height: 100vh;
 	background-color: #E8EAF6;
 	animation: 1s fadein 0.5s forwards;
 	opacity: 0;
@@ -119,10 +124,17 @@ section:not(#welcome-section):nth-child(even) {
 	margin: 10px;
 }
 
-#welcome-section {
+.container {
 	
-	opacity: 0;
-	padding-top: 150px;
+	opacity: 0;position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+	padding-top: 250px;
 	animation: 1s slidefade 1s forwards;
 }
 
@@ -136,10 +148,16 @@ section:not(#welcome-section):nth-child(even) {
 
 #contact {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	align-items: center;
+	padding: 0px 0px 10px 0px;
+	text-decoration: none;
+	font-family: "quicksand";
+	font-size: 22px;
+}
+
+#contact i {
 	justify-content: center;
-	align-content: space-around;
+	color: #455A64;
 }
 
 ul {
@@ -151,6 +169,66 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	font-family: "quicksand";
+}
+
+.grid a {
+	display:flex;
+	flex-direction: column;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px;
+	font-size: 25px;
+  	color: #455A64;
+}
+
+iframe {
+	border-radius: 1em;
+	border: 1px solid black;
+	border-spacing: none;
+	padding: 2px;
+}
+
+a p {
+	margin-top: 14px;
+}
+
+#projects-header {
+	padding-bottom: 50px;
+	font-size: 35px;
+	color: #455A64;
+	font-family: "quicksand";
+}
+
+#profile-link {
+	border: 3px solid #455A64;
+	border-radius: 0.5em;
+	font-family: "quicksand";
+	font-size: 22px;
+	text-decoration: none;
+	text-decoration-style: bold;
+	padding: 10px;
+	margin-top: 25px;
+	color: #455A64;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: #D6EAF8;
+	padding-top: 15px;
+	color: #455A64
+}
+
+footer a {
+	padding: 10px 0px 30px 30px;
+	color: #455A64
+}
+
+footer p{
+	text-align: center;
+	margin: 15px;
 }
 
 /*
