@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap');
+
+/*General Styles*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: normal 16px sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+header {
+	position: fixed;
+	width: 100%;
+}
+
+#navbar {
+	
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 15px;
+    background-color:  #D6EAF8;
+
+}
+
+#items {
+	display: flex;
+	flex-direction: row;
+}
+
+#title_logo {
+	color: #95a5a6;
+    font-family: "open sans";
+}
+
+nav a {
+  font-size: 25px;
+  margin: 20px;
+  text-decoration: none;
+  color: #95a5a6;
+  font-family: "open sans";
+  transition: color 0.5s ease-out;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+section:not(#welcome-section):nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+@media (max-width: 800px) {
+	section {
+		padding: 50px 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	header {
+		padding: 20px 50px;
+		flex-direction: column;
+	}
+}
+
+.container {
+	position: relative;
+	justify-content:center;
+	text-align:center;
+	min-height: 50vh;
+	background-color: #E8EAF6;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	z-index: -1;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+#welcome-section h1 {
+	font-family: "Open Sans", sans serif;
+	font-size: 50px;
+	margin: 10px;
+}
+
+#welcome-section h3 {
+	font-family: "quicksand";
+	font-size: 35px;
+	margin: 10px;
+}
+
+#welcome-section h4 {
+	font-family: "quicksand";
+	font-size: 25px;
+	margin: 10px;
+}
+
+#welcome-section {
+	
+	opacity: 0;
+	padding-top: 150px;
+	animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+
+#contact {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+}
+
+ul {
+	list-style: none;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*
+
+ul, nav {
+	list-style: none;
+}
+
+nav a{
+	text-decoration: none;
+	opacity: 0.75;
+	color: #34495E;
+}
+
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #fff;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+
+
+
+/* Navbar */
+/*
+header {
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	color: #34495E;
+}
+
+
+
+
+header navbar {
+	display: flex;
+	margin-right: -15;
+}
+
+header navbar li {
+	margin: 0 15px;
+}
+*/

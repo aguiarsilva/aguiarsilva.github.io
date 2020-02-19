@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>Survey Form</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/survey.css">-->
+ </head>
+  <body>
+    <div id="header">
+    <h1 id="title">Sua opinião é importante para o Pensando em Viagem.</h1>
+    <p id="description">Obrigado por participar da nossa pesquisa e melhorar nossa plataforma!</p>
+    </div>
+    <div class="container">
+      <form id="survey-form" action="/survey" method="post">
+       <p> 
+        <label for="name" id="name-label"><span>Nome:</span><abbr title="required" aria-label="required">*</abbr></label></br>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+       </p>
+        <p>
+        <label for="email" id="email-label"><span>E-mail:</span><abbr title="required" aria-label="required">*</abbr></br>
+          <input type="email" id="email" name="email" placeholder="E-mail" required>
+        </label>  
+        </p>
+        <p>
+          <label for="age" id="number-label"><span>Idade:</span></br>
+          <input type="number" id="number" name="age" placeholder="Age" min="18" max="120">
+        </label>
+        </p>
+        <p>
+          <label for="estadocivil" id="estadocivil-label"> <span>Estado Civil:</span></br>
+            <select id="dropdown" name="estadocivil">
+              <option value="solteiro">Solteiro(a)</option>
+              <option value="casado">Casado(a)</option>
+              <option value="uniao_estavel">União Estável</option>
+              <option value="divorciado">Divorciado(a)</option>
+              <option value="viuvo">Viúvo(a)</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label for="information" id="information"><span>How was the information found on the Website?</span> </br>
+          <input type="radio" id="satisfactory" name="information" value="satisfactory">Satisfactory</br>
+          <input type="radio" id="unsatisfactory" name="information" value="unsatisfactory">Not enough</br>
+           <input type="radio" id="not-sure" name="information" value="not-sure">Not sure
+          </label>
+        </p>
+        <p>
+          <label for="found-us" id="found-us"> <span>How did you find us?</span></br>
+            <select id="dropdown" name="found-us">
+              <option value="instagram">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="search">Search Engine</option>
+              <option value="friend">Through a Friend</option>
+              <option value="tumbler">Tumbler</option>
+              <option value="linkedin">LinkedIn</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label for="favorite" id="favorite">What is your area of main interest on the traveling subject?</br>
+          <input type="checkbox" name="topic1" value="planning">Trip planning</br>
+            <input type="checkbox" name="topic2" value="hosting">Hosting and Lodging</br>
+            <input type="checkbox" name="topic3" value="gastronomy">Gastronomy</br>
+            <input type="checkbox" name="topic4" value="sights">View sights</br>
+            <input type="checkbox" name="topic5" value="local">Feel like a local</br>
+            <input type="checkbox" name="topic6" value="business">Business Trip</br>
+            <input type="checkbox" name="topic7" value="leisure">Leisure Trip</br>
+            <input type="checkbox" name="topic8" value="culture">Cultural information about the places</br>
+            <input type="checkbox" name="topic9" value="other">Other</br>
+          </label>  
+</p>
+<p>
+  <label for="opinion" id="opinion">Feel free to write your opinions, critics or just send us a message:</br>
+    <textarea id="msg" maxlength: 300>Write here your message!</textarea>
+  </label>
+</p>
+<p>
+  <button class="button" id="submit">Submit</button>
+</p>
+      </form>
+    </div>
+  </body>
+</html>
