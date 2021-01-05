@@ -9,7 +9,7 @@ const message = {
 const myMessageOfTheDay = () => {
     const adjective = message.adjectives[Math.floor(Math.random()* 8)];
     const numbers = message.number[Math.floor(Math.random()* 60)];
-    console.log(`Good Day! Today you're going to have an ${adjective} day!`);
+    console.log(`Namastê! Today you're going to have an ${adjective} day!`);
     console.log(`Your Lucky number for the Day is: ${numbers}!`);
 };
 
