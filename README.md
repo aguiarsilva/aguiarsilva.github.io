@@ -12,3 +12,5 @@ This portfolio is to showcase my path in becoming a fullstack webdeveloper. I ha
 * NodeJS
 * HTML 5
 * CSS3
+* Git and Github
+* Command Line
