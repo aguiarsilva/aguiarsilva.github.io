@@ -176,12 +176,14 @@ ul {
     color: #455A64;
 }
 
-iframe {
+
+/* iframe {
     border-radius: 1em;
     border: 1px solid black;
     border-spacing: none;
     padding: 2px;
 }
+ */
 
 .thumbnail {
     border-radius: 1em;
