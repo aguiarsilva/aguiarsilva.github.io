@@ -159,7 +159,7 @@ ul {
 }
 
 .grid {
-    display: inline-grid;
+    display: inline-block;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     /* This is better for small screens, once min() is better supported */
     /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
