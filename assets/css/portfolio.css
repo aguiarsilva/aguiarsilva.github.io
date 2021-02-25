@@ -204,6 +204,12 @@ a p {
     font-family: "quicksand";
 }
 
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #profile-link {
     border: 3px solid #455A64;
     border-radius: 0.5em;
