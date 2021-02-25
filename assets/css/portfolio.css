@@ -190,6 +190,7 @@ ul {
     border: 1px solid black;
     border-spacing: none;
     padding: 2px;
+    display: inline-block;
 }
 
 a p {
