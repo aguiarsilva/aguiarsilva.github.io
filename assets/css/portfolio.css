@@ -173,7 +173,7 @@ ul {
 
 .grid a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-decoration: none;
     text-align: center;
     padding: 15px;
