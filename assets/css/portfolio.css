@@ -18,9 +18,13 @@ body {
     flex-direction: column;
 }
 
+
+/* Navigation */
+
 header {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 #navbar {
@@ -56,10 +60,19 @@ nav a:hover {
     color: #3498db;
 }
 
+
+/* Content */
+
+main {
+    padding-top: 60px;
+    opacity: 0.9;
+    width: 1200px;
+    margin: auto;
+}
+
 section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 100px 80px;
 }
 
@@ -159,14 +172,14 @@ ul {
 }
 
 .grid {
-    display: inline-block;
+    display: block;
     flex-wrap: wrap;
-    justify-content: center;
     font-family: "quicksand";
+    flex-direction: row;
 }
 
 .grid a {
-    display: inline-block;
+    display: block;
     flex-direction: row;
     text-decoration: none;
     text-align: center;
@@ -191,6 +204,8 @@ ul {
     padding: 2px;
     display: inline-block;
     flex-direction: column;
+    height: 200px;
+    margin: 10px;
 }
 
 a p {
@@ -204,10 +219,10 @@ a p {
     font-family: "quicksand";
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#projects {
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
 }
 
 #profile-link {
@@ -221,6 +236,9 @@ a p {
     margin-top: 25px;
     color: #455A64;
 }
+
+
+/* Footer */
 
 footer {
     display: flex;
