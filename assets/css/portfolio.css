@@ -107,11 +107,11 @@ section:not(#welcome-section):nth-child(even) {
     position: relative;
     justify-content: center;
     text-align: center;
-    min-height: 100vh;
-    background-color: #E8EAF6;
+    min-height: 80vh;
+    /*background-color: #E8EAF6;*/
+    background-image: url('../assets/img/main.jpg');
     animation: 1s fadein 0.5s forwards;
-    opacity: 0;
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 @keyframes fadein {
@@ -120,35 +120,36 @@ section:not(#welcome-section):nth-child(even) {
     }
 }
 
-#welcome-section h1 {
+h1 {
     font-family: "Open Sans", sans serif;
     font-size: 50px;
     margin: 10px;
 }
 
-#welcome-section h3 {
+h3 {
     font-family: "quicksand";
     font-size: 35px;
     margin: 10px;
 }
 
-#welcome-section h4 {
+h4 {
     font-family: "quicksand";
     font-size: 25px;
     margin: 10px;
 }
 
 .container {
-    opacity: 0;
+    /* opacity: 0; */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
-    z-index: -1;
-    background-color: #80a3db;
-    padding-top: 250px;
+    /* z-index: -1; */
+    /* background-color: #80a3db;*/
+    background-image: url('../assets/img/main.jpg');
+    padding-top: 150px;
     animation: 1s slidefade 1s forwards;
 }
 
@@ -158,6 +159,24 @@ section:not(#welcome-section):nth-child(even) {
         margin: 0;
     }
 }
+
+
+/* About */
+
+p {
+    font-family: 'quicksand';
+    font-size: 18px;
+}
+
+
+/* Skills */
+
+.fab {
+    font-weight: 400;
+}
+
+
+/* Contact */
 
 #contact {
     display: flex;
