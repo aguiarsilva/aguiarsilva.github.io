@@ -11,9 +11,11 @@ This portfolio is to showcase my projects in my track of becoming a fullstack we
 
 ## Technologies
 
+* ReactJS
 * Javascript
 * NodeJS
 * Express.js
+* Redux
 * MongoDB
 * Bootstrap4
 * Semantics UI
